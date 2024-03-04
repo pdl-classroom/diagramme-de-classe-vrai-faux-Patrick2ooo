@@ -8,8 +8,13 @@ class Cours
 
 class Etudiant
 
+<> diamond
+
+diamond -- Professeur
+diamond .. Cours
+diamond -- Discipline
+
 Professeur "1" -- "*" Discipline
-(Professeur, Discipline) .. Cours
 Etudiant "5..30" -- "*" Cours
 
 @enduml
